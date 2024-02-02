@@ -11,7 +11,7 @@
 
 # Travel Sri Lanka - Team 12
 
-A brief description of your web development project.
+-Travel SriLanka "Travel Sri Lanka" project! This project aims to provide information about Srilankan nature ,diverse culture,stunning,landscapes and warm hospitality with national events .
 
 ## Table of Contents
 - [Features](#features)
