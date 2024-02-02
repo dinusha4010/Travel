@@ -25,9 +25,13 @@
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Feature 1 (Full Name): Title of the feature. 
-- [ ] Feature 2 (Full Name): Title of the feature.
-- [ ] Feature 3 (Full Name): Title of the feature.
+- [ ] Create staff login to create and update current tour packages.(Kaluarachchige Kaluarachchi)-Customize tour packages.
+- [ ] Create traveler login -Travelers plan schedule  (Nuwani Fernando)- Travelers plan
+- [ ] create to find accomadation details(Supun Weerasinghe)-Hotels and Resorts 
+- [ ] create to find events details align to travelers visit.(Kulakshi Herath)-Upcoming Events
+- [ ] create Traveler inquery form that can read and reply staff.(Kaluarachchige Kaluarachchi)-Traveler inquery
+
+
 
 > Add features as required. 
 
