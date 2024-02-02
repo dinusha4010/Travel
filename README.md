@@ -9,7 +9,7 @@
 
 - Below, you will find an example to help you get started. Feel free to customize it to match your specific requirements and needs.
 
-# Project Name - Team Number
+# Travel Sri Lanka - Team 12
 
 A brief description of your web development project.
 
