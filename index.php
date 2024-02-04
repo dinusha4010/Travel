@@ -60,7 +60,7 @@
       <h2>Plan to visit</h2>
    	</div>
     </div>
-</div>
+
 <div class="row justify-content-md-center">
       <div class="col-md-3">
         <div class="card">
