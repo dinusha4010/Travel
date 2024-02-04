@@ -1,11 +1,13 @@
 <footer>
         
-        <div class="cards2">
+        <div class="row justify-content-md-center">
+        <div class="col-md-3">
           <div class="card">
-            <img src="images/frame1/logo.gif" alt="image"  class="rounded mx-auto d-block img-fluid" width="75" height="50">  
-            <p style="text-align: center;"><br>Tourism Hotline<br>1912</p>
+            <img src="images/frame1/logo.gif" alt="image"  class="rounded mx-auto d-block img-fluid" width="75" height="100">  
+            <p style="text-align: center;"><br>Tourism Hotline<br>1912 <br><br><br><br><br></p>
           </div>
-      
+          </div>
+          <div class="col-md-3">
           <div class="card">
           <p style="text-align: center;">Quick Links</p>
           <a href="">Subscribe</a>
@@ -15,9 +17,9 @@
           <a href="">Complaints</a>
           <p style="text-align: center;"><br><br>&copy; 2024 All Rights Reserved by Team 12</p>
           
-
           </div>
-      
+          </div>
+          <div class="col-md-3"> 
           <div class="card">
             <p style="text-align: center;">Follow Us On</p>   
            <a href=""> <img src="images/frame3/facebook.png" alt="image"  width="50" height="50" style="padding: 5px;"></a>
@@ -25,7 +27,7 @@
            <a href=""> <img src="images/frame3/twitter.png" alt="image" width="50" height="50" style="padding: 5px;"></a>
            <a href=""> <img src="images/frame3/whatsapp.png" alt="image" width="50" height="50" style="padding: 5px;"></a>
 
-              
+          </div>    
           </div>
        
       

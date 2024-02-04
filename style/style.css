@@ -22,7 +22,6 @@ h1{
 color: #CCE91E;
 text-align: center;
 
-/* header home */
 font-family: 'Allura', cursive;
 font-size: 96px;
 font-style: normal;
@@ -30,20 +29,21 @@ font-weight: 400;
 line-height: normal;
 
 }
-.cards{
-    width: 900px;
-    margin: 8px auto;
-    display: grid;
-    grid-template-columns: 170px 170px 170px 170px 170px;
-    gap:8px
+
+.card{
+
+  background-color: #1C1B1B !important;
+  border-color: white
 }
 
+
 p{
-    
+   
+  text-align: left ;
+  
 
 
-
- color:  #FFF;
+ color:  #FFF ;
  
 
 /* paragraph font */
@@ -65,31 +65,10 @@ line-height: normal;
 background-color: #CCE91E;
 }
 
-.cards2{
-    width: 900px;
-    margin: 8px auto;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    gap:8px;
-    
-}
 
-.cards2> div {
-    
-    background: rgba(28, 27, 27, 0.90); 
-    padding: 20px 0;
-    border: 1px solid white;
-    
-  }
 
 h3{
-    
-
-
-
-    color:  #CCE91E;
-   
-   /* paragraph font */
+   color:  #CCE91E !important;
    font-family: 'Allerta', sans-serif;
    font-size: 24px;
    font-style: normal;
@@ -108,39 +87,9 @@ h3{
     margin-left: 190px;
    }
 
-   .cards3{
-    width: 900px;
-    margin: 8px auto;
-    display: grid;
-    grid-template-columns: 450px 450px;
-    gap:8px;
-    
-}
+  
 
-.cards3> div {
-    
-    background: rgba(28, 27, 27, 0.90); 
-    padding: 20px 0;
-    border: 1px solid white;
-    
-  }
 
-  .cards4{
-    width: 450px;
-    margin: 8px auto;
-    display: grid;
-    grid-template-columns: 450px 450px 450px 450px;
-    gap:8px;
-    
-}
-
-.cards4> div {
-    
-    background: rgba(28, 27, 27, 0.90); 
-    padding: 20px 0;
-    border: 1px solid white;
-    
-  }
 
   footer p  {
 
@@ -176,72 +125,8 @@ h3{
     width: 924px;
   }
 
-  @media only screen and (max-width: 480px) {
-    .scw{
-
-      width: 350px;
-    }
-
-    .cards2{
-      width: 350px;
-      margin: 8px auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap:8px;
-      
-  }
-  .cards3{
-    width: 350px;
-    margin: 8px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:8px;
-  
-  }
-  h1{
-    font-size: 36px;
-  }
-
-  
-.imageh{
-  
-  width: 10px;
-}
-}
-
-.imageh{
-  height: 400px;
-  width: 170px;
-
-
-
-}
-
-.image {
-  background-image: url("https://content.codecademy.com/courses/web-101/unit-4/htmlcss1-img_soccer.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.cards.overlay {
 
 
   
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .card:hover .overlay {
-    opacity: 1;
-  }
+  
+ 

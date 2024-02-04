@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="style/style.css">
 
 </head>
-<body>
-  <div class="container-sm" >
+<body >
+  <div class="container" >
   
     <header >
         <nav class="navbar navbar-expand-lg fixed-top  bg-light">
@@ -69,4 +69,12 @@
         
     </header>
     <div id="page1" style="padding-top: 60px;" >
-      <h1 class="mx-auto p-2 scw" style=" text-align: center;"><?php echo $pagetitle;?></h1>
+      
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+    	<div class="col col-lg-9">
+        <h1><?php echo $pagetitle;?></h1>
+   	    </div>
+        </div>
+    </div>
+      
