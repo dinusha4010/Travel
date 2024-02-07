@@ -73,7 +73,19 @@ gender varchar(15) NOT NULL
 ) ;
 
 ```
-
+# Accommodation : Supun Weerasinghe
+```
+CREATE TABLE accommodation (
+  accommodation_id int NOT NULL,
+  name varchar(50) NOT NULL,
+  location varchar(50) NOT NULL,
+  price_per_night decimal(10,0) NOT NULL,
+  availble_rooms int NOT NULL,
+  check_in_date date NOT NULL,
+  check_out-date date NOT NULL,
+  number_of_guests int NOT NULL,
+  rating decimal(10,0) NOT NULL
+);
 
 
 
