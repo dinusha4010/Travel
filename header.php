@@ -27,29 +27,29 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#page1"><img src="images/frame1/logo.gif" alt="logo" width="90" height="40"></a>
+                        <a class="nav-link " aria-current="page" href="index.php"><img src="images/frame1/logo.gif" alt="logo" width="90" height="40"></a>
                       </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                    <a class="nav-link " aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#2">Plan your trip</a>
+                    <a class="nav-link" href="index.php#2">Plan your trip</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#3">Where to go </a>
+                    <a class="nav-link" href="index.php#3">Where to go </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#4"> Events </a>
+                    <a class="nav-link" href="index.php#4"> Events </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#5">Adventure </a>
+                    <a class="nav-link" href="index.php#5">Adventure </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#6">Accormadation </a>
+                    <a class="nav-link" href="index.php#6">Accormadation </a>
                   </li>
                   
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#7" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle me-md-4" href="#7" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Foods
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -60,7 +60,10 @@
                       <li><a class="dropdown-item" href="#9">Sea Food
                       </a></li>
                     </ul>
+                    
                   </li>
+                  <li> <button class="btn btn-primary me-md-4" type="button"><a href="login.php">Login</a></button></li>
+                  <li> <button class="btn btn-primary" type="button">Sign Up</button></li>
                   
                 </ul>
               </div>
