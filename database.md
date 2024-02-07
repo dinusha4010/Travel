@@ -48,4 +48,41 @@ CREATE TABLE events (
 
 
 
+
+```
+# Traveller,staff : Nuwani Fernando
+```
+CREATE TABLE staff (
+  staff_id int NOT NULL,
+  user_id int NOT NULL,
+  staff_full_name varchar(100) NOT NULL,
+  email varchar(50) NOT NULL,
+  phone varchar(15) NOT NULL
+) ;
+
+CREATE TABLE Traveller ( 
+traveller_id int NOT NULL, 
+user_id int NOT NULL, 
+full_name varchar(100) NOT NULL, 
+email varchar(50) NOT NULL,
+number_of_heads int NOT NULL,
+check_in date NOT NULL, 
+country varchar(50) NOT NULL,
+phone varchar(15) NOT NULL, 
+gender varchar(15) NOT NULL 
+) ;
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ```
