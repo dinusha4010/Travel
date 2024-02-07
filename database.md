@@ -27,3 +27,25 @@ CREATE TABLE `schedule` (
 
 
 ```
+# inquiry,events : Kulakshi Herath
+```
+CREATE TABLE `Inquiry` (
+  `inquiry_id` int NOT NULL,
+  `traveler_id` int NOT NULL,
+  `staff_id` int NOT NULL,
+  `message` varchar(500) NOT NULL,
+  `response` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE events (
+  event_id int NOT NULL,
+  name varchar(50) NOT NULL,
+  date date NOT NULL,
+  location varchar(20) NOT NULL,
+  description varchar(400) NOT NULL
+) ;
+
+
+
+
+```
