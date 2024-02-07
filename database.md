@@ -82,7 +82,7 @@ CREATE TABLE accommodation (
   price_per_night decimal(10,0) NOT NULL,
   availble_rooms int NOT NULL,
   check_in_date date NOT NULL,
-  check_out-date date NOT NULL,
+  check_out_date date NOT NULL,
   number_of_guests int NOT NULL,
   rating decimal(10,0) NOT NULL
 );
