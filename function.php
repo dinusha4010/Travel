@@ -7,7 +7,7 @@ ob_start();
 
 function userLogin()
 {
-    header('Location: admin.php');
+    header('Location: staff.php');
 exit();
 
 }

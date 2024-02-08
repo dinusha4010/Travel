@@ -10,7 +10,7 @@ $result = $conn->query($sql);
 // Check if there are any results
 if ($result->num_rows > 0) {
    
-
+ echo '<div class="row justify-content-md-center">';
     // Loop through the result set and display data in rows
     while ($row = $result->fetch_assoc()) {
     

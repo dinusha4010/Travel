@@ -25,7 +25,7 @@
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
-- [ ] Create staff login to create and update current tour packages.(Kaluarachchige Kaluarachchi)-Customize tour packages.
+- [X] Create staff login to create and update current tour packages.(Kaluarachchige Kaluarachchi)-Customize tour packages.
 - [ ] Create traveler login -Travelers plan schedule  (Nuwani Fernando)- Travellers plan
 - [ ] create to find accomadation details(Supun Weerasinghe)-Hotels and Resorts 
 - [ ] create to find events details align to travelers visit.(Kulakshi Herath)-Upcoming Events
@@ -52,35 +52,22 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
 
-# Traveller,staff : Nuwani Fernando
-```
-CREATE TABLE staff (
-  staff_id int NOT NULL,
-  user_id int NOT NULL,
-  staff_full_name varchar(100) NOT NULL,
-  email varchar(50) NOT NULL,
-  phone varchar(15) NOT NULL
-) ;
+- user_login (Created By : Kaluarachchi KCD)
+- tour_packages (Created By : Kaluarachchi KCD)
+- schedule (Created By : Kaluarachchi KCD)
+- Traveller (Created By : Nuwani Fernando)
+- staff (Created By : Nuwani Fernando)
+- accommodation (Created By : Supun Weerasinghe)
+- inquiry (Created By : Kulakshi Herath)
+- events (Created By : Kulakshi Herath)
 
-CREATE TABLE Traveller ( 
-traveller_id int NOT NULL, 
-user_id int NOT NULL, 
-full_name varchar(100) NOT NULL, 
-email varchar(50) NOT NULL,
-number_of_heads int NOT NULL,
-check_in date NOT NULL, 
-country varchar(50) NOT NULL,
-phone varchar(15) NOT NULL, 
-gender varchar(15) NOT NULL 
-) ;
 
-```
+
 
 > Include the ER Diagram of the database. 
+
+![alt text](./images/ER.png)
 
 ---
 

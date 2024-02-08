@@ -73,7 +73,7 @@ gender varchar(15) NOT NULL
 ) ;
 
 ```
-# Accommodation : Supun Weerasinghe
+# accommodation : Supun Weerasinghe
 ```
 CREATE TABLE accommodation (
   accommodation_id int NOT NULL,
