@@ -26,7 +26,7 @@
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Create staff login to create and update current tour packages.(Kaluarachchige Kaluarachchi)-Customize tour packages.
-- [ ] Create traveler login -Travelers plan schedule  (Nuwani Fernando)- Travelers plan
+- [ ] Create traveler login -Travelers plan schedule  (Nuwani Fernando)- Travellers plan
 - [ ] create to find accomadation details(Supun Weerasinghe)-Hotels and Resorts 
 - [ ] create to find events details align to travelers visit.(Kulakshi Herath)-Upcoming Events
 - [ ] create Traveler inquery form that can read and reply staff.(Kaluarachchige Kaluarachchi)-Traveler inquery
@@ -40,7 +40,6 @@ In this section, list and describe the features or functionality that you are wo
 Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ### Feature 2
-
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ### Feature 3
@@ -56,6 +55,30 @@ List the database tables that are part of your project.
 - Table 1 (Created By): Table Name 
 - Table 2 (Created By): Table Name 
 - Table 3 (Created By): Table Name 
+
+# Traveller,staff : Nuwani Fernando
+```
+CREATE TABLE staff (
+  staff_id int NOT NULL,
+  user_id int NOT NULL,
+  staff_full_name varchar(100) NOT NULL,
+  email varchar(50) NOT NULL,
+  phone varchar(15) NOT NULL
+) ;
+
+CREATE TABLE Traveller ( 
+traveller_id int NOT NULL, 
+user_id int NOT NULL, 
+full_name varchar(100) NOT NULL, 
+email varchar(50) NOT NULL,
+number_of_heads int NOT NULL,
+check_in date NOT NULL, 
+country varchar(50) NOT NULL,
+phone varchar(15) NOT NULL, 
+gender varchar(15) NOT NULL 
+) ;
+
+```
 
 > Include the ER Diagram of the database. 
 

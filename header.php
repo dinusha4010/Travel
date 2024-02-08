@@ -72,7 +72,7 @@ ob_start();
 
               </li>
               <li> <button class="btn btn-primary me-md-4" type="button"><a href="login.php">Login</a></button></li>
-              <li> <button class="btn btn-primary" type="button">Sign Up</button></li>
+              <li> <button class="btn btn-primary" type="button"><a href="form1.php">Sign Up</a></button></li>
 
             </ul>
           </div>
