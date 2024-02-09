@@ -46,6 +46,14 @@ Include more detailed information about Feature 2 here. Provide links to related
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+### Feature 4
+
+Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
+### Feature 5
+
+Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
 ---
 
 ## Database Tables

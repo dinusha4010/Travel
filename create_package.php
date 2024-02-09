@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
     // Execute the SQL query using the database connection
     if ($conn->query($sql) === TRUE) {
         // If the query was successful, display a success message
-        echo "New record added";
+        echo "<h3>New record added sucessfully</h3>";
     } else {
         // If there was an error in the query, display an error message
         echo "Error: " . $sql . "<br>" . $conn->error;
