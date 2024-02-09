@@ -1,4 +1,4 @@
-<?php $title="Login-Travel-Sri Lanka";$pagetitle="Login";include 'header.php';?>
+<?php  $title="Login-Travel-Sri Lanka";$pagetitle="Login";include 'header.php';?>
 <form method="post" name="login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <div class="row justify-content-md-center">
         <label for="userName" class="col-sm-2 col-form-label"><p>User Name</p></label>
@@ -37,9 +37,14 @@ if (isset($_POST['submit'])) {
 
         if ($password === $inputPassword) {
             include 'function.php';
-            session_start();
-            $_SESSION['user_name']=$user_name;
+           
+          
+            $_SESSION['user_id']=$row['user_id'];
+            $_SESSION['user_name']=$row['user_name'];
+            $_SESSION['user_type']=$row['user_type'];
+            
             userLogin();
+
         } else {
             echo "<p>Password error</p>";
         }

@@ -37,7 +37,7 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1
 
-Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+staff login  for  create,update and delete  tour packages.
 
 ### Feature 2
 Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .

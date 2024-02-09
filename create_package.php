@@ -30,7 +30,10 @@
     
   </select>
   <label for="floatingSelectDisabled">Choose photo</label>
+
+  
 </div>
+
 <br><br>
 <button type="submit" class="btn btn-light" name="submit">Submit</button>
 </form>
