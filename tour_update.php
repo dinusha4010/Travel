@@ -1,4 +1,9 @@
 <?php $title="Modify-packages-Travel-Sri Lanka";$pagetitle="Modify remove tour packages";include 'header.php';
+if ($_SESSION['user_type']!=4) {
+  
+  header('Location: login.php');
+  exit();
+}
 include 'db.php';
 $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM tour_packages WHERE package_id= '$a'");

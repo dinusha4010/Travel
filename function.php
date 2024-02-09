@@ -1,8 +1,5 @@
-
-
-
 <?php
-@ob_start();
+
 
 
 
@@ -46,4 +43,4 @@ function traverlPackage($result)
 }
 
 
-ob_flush();?>
+?>

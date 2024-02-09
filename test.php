@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_POST['submit'])) {
     // Retrieve data from the form and store it in variables

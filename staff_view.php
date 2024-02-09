@@ -1,5 +1,9 @@
-
 <?php $title="Staff-response-Travel-Sri Lanka";$pagetitle="Modify and delete tour packages";include 'header.php';
+if ($_SESSION['user_type']!=4) {
+  
+    header('Location: login.php');
+    exit();
+  }
 
 include 'db.php';
 // SQL query to retrieve data from the 'travel' table
