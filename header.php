@@ -77,7 +77,8 @@ session_start();
                 <a class="nav-link" href="Inquiry.php">Inquiry </a>
               </li>
               <li> <button class="btn btn-primary me-md-4" type="button"><a href="login.php">Login</a></button></li>
-              <li> <button class="btn btn-primary" type="button"><a href="form1.php">Sign Up</a></button></li>
+              <li> <button class="btn btn-primary me-md-4" type="button"><a href="form1.php">Sign Up</a></button></li>
+              <li> <button class="btn btn-primary" type="button"><a href="logout.php">Log Out</a></button></li>
 
             </ul>
           </div>

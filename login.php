@@ -1,4 +1,12 @@
-<?php  $title="Login-Travel-Sri Lanka";$pagetitle="Login";include 'header.php';?>
+<?php  $title="Login-Travel-Sri Lanka";$pagetitle="Login";include 'header.php';
+if(isset($_SESSION['user_type'])){
+    if ($_SESSION['user_type']==4) {
+
+        header('Location: staff.php');
+
+    }
+}
+?>
 <form method="post" name="login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <div class="row justify-content-md-center">
         <label for="userName" class="col-sm-2 col-form-label"><p>User Name</p></label>

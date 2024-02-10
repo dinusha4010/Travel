@@ -1,4 +1,6 @@
 <?php
+
+if(isset($_SESSION['user_type'])){
 if ($_SESSION['user_type']==4) {
       echo '<div class="container text-center col col-lg-9" style="padding-top: 20px;" >
       <div class="btn-group">
@@ -10,6 +12,7 @@ if ($_SESSION['user_type']==4) {
       </div>';
       
   
+}
 }
 
 ?>
