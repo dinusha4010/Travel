@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     include 'function.php';
     
     traverInquiry($result);
-
+  echo '</div>';
     
 } else {
     // Display a message if no results are found

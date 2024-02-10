@@ -53,8 +53,30 @@ function traverInquiry($result)
           
           <div class="card-body">
             <h3 class="card-title">'. "Inquiry from: ".'</h3>
-            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>inquiry :". $row['inquiry'].'</p>
+            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>Inquiry :". $row['inquiry']."<br><br>inquiry Date :". $row['inquiry_date'].'</p>
             <a href="inquiry_update.php?id='.$row['inquiry_id'].'" class="btn btn-primary btn-sm" >Update Status</a>
+          </div>
+        </div>
+      </div>';
+
+
+        
+}
+}
+
+function traverInquiry2($result)
+{   
+   
+    while ($row = $result->fetch_assoc()) {
+    
+
+        echo '<div class="col-md-3">
+        <div class="card">
+          
+          <div class="card-body">
+            <h3 class="card-title">'. "Inquiry from: ".'</h3>
+            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>Inquiry :". $row['inquiry']."<br><br>inquiry Date :". $row['inquiry_date'].'</p>
+            
           </div>
         </div>
       </div>';
@@ -75,7 +97,7 @@ function  traverInquiryHistory($result)
           
           <div class="card-body">
             <h3 class="card-title">'. "Inquiry from: ".'</h3>
-            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>inquiry :". $row['inquiry']."<br><br>Reply By :". $row['user_name']."<br><br>Reply was :". $row['response'].'</p>
+            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>inquiry :". $row['inquiry']."<br><br>Inquiry Date :". $row['inquiry_date']."<br><br>Reply By :". $row['user_name']."<br><br>Reply was :". $row['response']."<br><br>Reply Date :". $row['reply_date'].'</p>
             
           </div>
         </div>

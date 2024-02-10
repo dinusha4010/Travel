@@ -9,16 +9,16 @@ $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM Inquiry WHERE inquiry_id= '$a'");
 echo '<div class="row justify-content-md-center">';
 include 'function.php';
-traverInquiry($result);
+traverInquiry2($result);
 ?>
 <form name="create1" method="post" action="">
 <div class="row justify-content-md-center">
 <div class="col-md-3">
-  <textarea class="form-control" placeholder="Write response here" name ="response" id="floatingTextarea" style="height: 100px" required ></textarea>
+  <textarea class="form-control" placeholder="Write Action taken here" name ="response" id="floatingTextarea" style="height: 100px" required ></textarea>
   <label for="floatingTextarea"><p></p></label>
 
-<button type="submit" class="btn btn-light" name="submit">Record response</button>
-<a class="btn btn-primary" href="staff_view.php" role="button">Back</a>
+<button type="submit" class="btn btn-light" name="submit">Submit</button>
+
 </div>
 </div>
 </form>

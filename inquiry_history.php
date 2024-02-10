@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     
     traverInquiryHistory($result);
 
-    
+    echo'</div>';
 } else {
     // Display a message if no results are found
     echo "<h3>No History to be display</h3>";

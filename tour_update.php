@@ -28,33 +28,26 @@ $row= mysqli_fetch_array($result);
   <label for="floatingInput">Duration ( 7,14,21,28) in days</label>
 </div>
 
-<div class="form-floating">
-  <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" name="image_link" required value="<?php echo $row['image_link']; ?>">
-    <option selected>Open this select menu</option>
-    <option value="images/Package/beach.jpg">Beach</option>
-    <option value="images/Package/galle.jpg">Galle</option>
-    <option value="images/Package/kandy.jpg">Kandy</option>
-    <option value="images/Package/sigiri.jpg">Sigirya</option>
-    <option value="images/Package/wild.jpg">wild</option>
-    
-  </select>
-  <label for="floatingSelectDisabled">Choose photo</label>
-</div>
 <br><br>
 <button type="submit" class="btn btn-light" name="submit">Submit</button>
 <a class="btn btn-primary" href="staff_view.php" role="button">Back</a>
 </form>
 <?php 
 
-if (isset($_POST['submit'])){
-    
+if (isset($_POST['submit'])) {
+
+    // Retrieve data from the form and store it in variables
     $package_name = $_POST['package_name'];     
     $description = $_POST['description'];   
     $price = $_POST['price'];       
     $duration = $_POST['duration']; 
-    $image_link = $_POST['image_link']; 
+    
+  
 
-    $query = mysqli_query($conn,"UPDATE tour_packages set package_name='$package_name', description='$description', price='$price', duration='$duration', image_link='$image_link' where package_id='$a'");
+    // Include the database connection file
+    include 'db.php';
+
+    $query = mysqli_query($conn,"UPDATE tour_packages set package_name='$package_name', description='$description', price='$price', duration='$duration' where package_id='$a'");
     if($query){
         echo "<h3>Your information is updated Successfully</h3>";
         // if you want to redirect to update page after updating
