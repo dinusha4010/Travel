@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
     $conn->close();
 }else{
 
-    echo "error";
+    
 }
 ?>
 <?php include 'footer.php';?>

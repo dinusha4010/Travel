@@ -42,5 +42,51 @@ function traverlPackage($result)
 }
 }
 
+function traverInquiry($result)
+{   
+   
+    while ($row = $result->fetch_assoc()) {
+    
+
+        echo '<div class="col-md-3">
+        <div class="card">
+          
+          <div class="card-body">
+            <h3 class="card-title">'. "Inquiry from: ".'</h3>
+            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>inquiry :". $row['inquiry'].'</p>
+            <a href="inquiry_update.php?id='.$row['inquiry_id'].'" class="btn btn-primary btn-sm" >Update Status</a>
+          </div>
+        </div>
+      </div>';
+
+
+        
+}
+}
+
+function  traverInquiryHistory($result)
+{   
+   
+    while ($row = $result->fetch_assoc()) {
+    
+
+        echo '<div class="col-md-3">
+        <div class="card">
+          
+          <div class="card-body">
+            <h3 class="card-title">'. "Inquiry from: ".'</h3>
+            <p class="card-text">' ."First Name : ". $row['first_name'] ."<br><br>Last Name : " . $row['last_name'] ."<br><br>Email : ". $row['email'] ."<br><br>Phone Number : ". $row['phone']."<br><br>inquiry :". $row['inquiry']."<br><br>Reply By :". $row['user_name']."<br><br>Reply was :". $row['response'].'</p>
+            
+          </div>
+        </div>
+      </div>';
+
+
+        
+}
+}
+
+
+
 
 ?>

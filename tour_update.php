@@ -62,36 +62,7 @@ if (isset($_POST['submit'])){
     }
     else {  echo "Error: " . $sql . "<br>" . $conn->error;}
     }
-/* 
-The isset() function is used to check if a variable is set and not NULL.
- In this case, it's checking if the $_POST['submit'] 
-value is set and not NULL. If the form has been submitted, the value of $_POST['submit'] will be set,
-and the code inside the if block will be executed. If the form has not been submitted, 
-the value of $_POST['submit'] will not be set, and the code inside the if block will not be executed.
 
-if (isset($_POST['submit'])){
-    
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $query = mysqli_query($conn,"UPDATE studentinfo set first_name='$fname', last_name='$lname' where id='$a'");
-    if($query){
-        echo "<h2>Your information is updated Successfully</h2>";
-        // if you want to redirect to update page after updating
-    }
-    else { echo "Record Not modified";}
-    }
-
-    if (isset($_POST['delete'])){
-        $query = mysqli_query($conn,"DELETE FROM studentinfo where id='$a'");
-        if($query){
-            echo "Record Deleted with id: $a <br>";
-            // if you want to redirect to update page after updating
-            //header("location: update.php");
-        }
-        else { echo "Record Not Deleted";}
-        }
-
-        */
 
 $conn->close();
 
@@ -107,4 +78,3 @@ include 'footer.php';
 ?>
 
 
-<?php include 'footer.php';?>

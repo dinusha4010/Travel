@@ -1,4 +1,4 @@
-<?php $title="Staff-response-Travel-Sri Lanka";$pagetitle="Reply to travellers inquiry";include 'header.php';
+<?php $title="Inquiry-response-Travel-Sri Lanka";$pagetitle=" travellers inquiry history";include 'header.php';
 if ($_SESSION['user_type']!=4) {
   
   header('Location: login.php');
@@ -11,7 +11,7 @@ if ($_SESSION['user_type']!=4) {
 <?php
 include 'db.php';
 // SQL query to retrieve data from the table
-$sql = "SELECT * FROM Inquiry where reply_status=0";
+$sql = "SELECT * FROM Inquiry where reply_status=1";
 
 // Execute the SQL query and store the result
 $result = $conn->query($sql);
@@ -23,13 +23,12 @@ if ($result->num_rows > 0) {
     // Loop through the result set and display data in rows
     include 'function.php';
     
-    traverInquiry($result);
+    traverInquiryHistory($result);
 
     
 } else {
     // Display a message if no results are found
-    echo "<div class='text-center'>";
-    echo "<h3>No Inquiry to be display</h3></div>";
+    echo "<h3>No History to be display</h3>";
 }
 // close the connection when done
 $conn->close();

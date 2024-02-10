@@ -1,3 +1,18 @@
+<?php
+if ($_SESSION['user_type']==4) {
+      echo '<div class="container text-center col col-lg-9" style="padding-top: 20px;" >
+      <div class="btn-group">
+      <a href="create_package.php" class="btn btn-primary">Create new tour packages</a>
+      <a href="staff_view.php" class="btn btn-primary">Modify and remove tour package</a>
+      <a href="staff_response.php" class="btn btn-primary">travellers inquiry</a>
+      <a href="inquiry_history.php" class="btn btn-primary">travellers inquiry history</a>
+      </div>
+      </div>';
+      
+  
+}
+
+?>
 <footer>
 <div style="padding-top: 100px;">
 <div class="container text-center">    
