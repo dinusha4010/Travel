@@ -8,6 +8,7 @@ if ($_SESSION['user_type']==4) {
       <a href="staff_view.php" class="btn btn-primary">Modify and remove tour package</a>
       <a href="staff_response.php" class="btn btn-primary">travellers inquiry</a>
       <a href="inquiry_history.php" class="btn btn-primary">travellers inquiry history</a>
+      <a href="event_manage.php" class="btn btn-primary">Add event</a>
       </div>
       </div>';
       
