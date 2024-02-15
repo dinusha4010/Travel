@@ -85,8 +85,9 @@ May to August is the best time to avoid the crowds.</p>
             <a href="#" class="btn btn-primary">Read More</a>
           </div>
         </div>
+        <a href="trial.php" class="link-secondary"><h4>Let's get started desigining your own package →</h4></a>
+
       </div>
-      
       <div class="col-md-3">
         <div class="card">
           <div class="card-body">
