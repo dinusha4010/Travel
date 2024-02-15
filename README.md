@@ -26,7 +26,7 @@
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [X] Create staff login to create and update current tour packages.(Kaluarachchige Kaluarachchi)-Customize tour packages.
-- [ ] Create traveler login -Travelers plan schedule  (Nuwani Fernando)- Travellers plan
+- [X] Create cost information according to traveller’s plan schedule  (Nuwani Fernando)- Travellers plan & cost details
 - [ ] create to find accomadation details(Supun Weerasinghe)-Hotels and Resorts 
 - [ ] create to find events details align to travelers visit.(Kulakshi Herath)-Upcoming Events
 - [ ] create Traveler inquery form that can read and reply staff.(Kaluarachchige Kaluarachchi)-Traveler inquery
@@ -40,7 +40,11 @@ In this section, list and describe the features or functionality that you are wo
 staff login  for  create,update and delete  tour packages.
 
 ### Feature 2
-Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+Creating a simple design to obtain cost details considering traveller’s requirements such as head count , number of stays inclusively.
+This will further assists traveller to get an idea of what kind of areas to be selected according to his desires.
+.
+https://github.com/dinusha4010/Travel
+link to the feature (shell.hamk.fi) .
 
 ### Feature 3
 
