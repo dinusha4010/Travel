@@ -44,7 +44,8 @@ Creating a simple design to obtain cost details considering traveller’s requir
 This will further assists traveller to get an idea of what kind of areas to be selected according to his desires.
 .
 https://github.com/dinusha4010/Travel
-link to the feature (shell.hamk.fi) .
+http://shell.hamk.fi/~nuwani23000/Travel/feature2.php 
+http://shell.hamk.fi/~nuwani23000/Travel/process5.php 
 
 ### Feature 3
 
