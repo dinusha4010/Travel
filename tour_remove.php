@@ -29,17 +29,9 @@ $row= mysqli_fetch_array($result);
   <label for="floatingInput">Duration ( 7,14,21,28) in days</label>
 </div>
 
-<div class="form-floating">
-  <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" name="image_link" required value="<?php echo $row['image_link']; ?>">
-    <option selected>Open this select menu</option>
-    <option value="images/Package/beach.jpg">Beach</option>
-    <option value="images/Package/galle.jpg">Galle</option>
-    <option value="images/Package/kandy.jpg">Kandy</option>
-    <option value="images/Package/sigiri.jpg">Sigirya</option>
-    <option value="images/Package/wild.jpg">wild</option>
-    
-  </select>
-  <label for="floatingSelectDisabled">Choose photo</label>
+<div class="form-floating mb-3">
+ 
+  <img src='<?php echo $row['image_link']; ?>' width='300' height='300' alt='Image'>
 </div>
 <br><br>
 <button type="submit" class="btn btn-danger" name="delete">Delete</button>

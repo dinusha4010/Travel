@@ -1,10 +1,8 @@
-
-      <?php
+<?php
       $title="Travel-Sri Lanka";
       $pagetitle="Welcome to Sri Lanka";
       include 'header.php';
-
-      ?>
+       ?>
 
 
 <div class="row justify-content-md-center">
