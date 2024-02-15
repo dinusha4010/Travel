@@ -78,8 +78,27 @@ session_start();
               </li>
               <li> <button class="btn btn-primary me-md-4" type="button"><a href="login.php">Login</a></button></li>
               <li> <button class="btn btn-primary me-md-4" type="button"><a href="form1.php">Sign Up</a></button></li>
-              <li> <button class="btn btn-primary" type="button"><a href="logout.php">Log Out</a></button></li>
+              
+              <?php
 
+
+if(isset($_SESSION['user_name'])) {
+    
+    echo '<li class="nav-item dropdown">';
+    echo '<a class="nav-link dropdown-toggle me-md-4" href="#7" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">';
+    echo $_SESSION['user_name'];
+    echo '</a>';
+    echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+    echo '<li><a class="dropdown-item" href="logout.php">Log Out</a></li>';
+    echo '</ul>';
+    echo '</li>';
+}
+?>
+                 
+                </ul>
+
+              </li>
+              
             </ul>
           </div>
         </div>
