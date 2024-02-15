@@ -29,7 +29,7 @@ In this section, list and describe the features or functionality that you are wo
 - [X] Create cost information according to traveller’s plan schedule  (Nuwani Fernando)- Travellers plan & cost details
 - [ ] create to find accomadation details(Supun Weerasinghe)-Hotels and Resorts 
 - [ ] create to find events details align to travelers visit.(Kulakshi Herath)-Upcoming Events
-- [ ] create Traveler inquery form that can read and reply staff.(Kaluarachchige Kaluarachchi)-Traveler inquery
+- [X] create Traveler inquery form that can read and reply staff.(Kaluarachchige Kaluarachchi)-Traveler inquery
 
 
 
@@ -37,8 +37,20 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1
 
-staff login  for  create,update and delete  tour packages.
-
+Create staff login  for  create,update and delete  tour packages.Also create admin menu in footer section
+Customer view created for packges with data filter facility.staff user id : admin password: password
+[staff login (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/login.php)
+[staff login (github)](https://github.com/dinusha4010/Travel/blob/main/login.php)
+[staff function (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff.php)
+[staff function (github)](https://github.com/dinusha4010/Travel/blob/main/staff.php)
+[Tour package create (github)](https://github.com/dinusha4010/Travel/blob/main/create_package.php)
+[Tour package create (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/create_package.php)
+[Tour package edit (github)](https://github.com/dinusha4010/Travel/blob/main/tour_update.php)
+[Tour package edit (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff_view.php)
+[Tour package remove (github)](https://github.com/dinusha4010/Travel/blob/main/tour_remove.php)
+[Tour package remove (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff_view.php)
+[customer view(shell)](https://github.com/dinusha4010/Travel/blob/main/package.php)
+[customer view(github)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/package.php)
 ### Feature 2
 Creating a simple design to obtain cost details considering traveller’s requirements such as head count , number of stays inclusively.
 This will further assists traveller to get an idea of what kind of areas to be selected according to his desires.
@@ -57,7 +69,15 @@ Include more detailed information about Feature 3 here. Provide links to related
 
 ### Feature 5
 
-Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+create a cutomer inquiry page and staff page to taken action for customer inquiry and customer inquiry histroy page with data filtering.
+
+[cutomer inquiry (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/Inquiry.php)
+[cutomer inquiry (github)](https://github.com/dinusha4010/Travel/blob/main/Inquiry.php)
+[staff response  (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff_response.php)
+[staff response  (github)](https://github.com/dinusha4010/Travel/blob/main/inquiry_update.php)
+[inquiry hitory  (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/inquiry_history.php)
+[inquiry hitory  (github)](https://github.com/dinusha4010/Travel/blob/main/inquiry_history.php)
+
 
 ---
 
@@ -88,8 +108,8 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 1 :(Kaluarachchi KCD): Package create: [link (github)](https://github.com/dinusha4010/Travel/blob/main/create_package.php) | [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/create_package.php) | Validations Applied
+- Form 2: (Kaluarachchi KCD): Customer inquiry :[link (github)](https://github.com/dinusha4010/Travel/blob/main/Inquiry.php) | Link to the form [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/Inquiry.php).  | Validations Applied
 - Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
 
@@ -99,7 +119,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 List any tables that you have created in the project work
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Kaluarachchi KCD): Traveler package update and remove | [link (github)](https://github.com/dinusha4010/Travel/blob/main/staff_view.php) | [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff_view.php).
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
