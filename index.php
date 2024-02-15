@@ -200,7 +200,7 @@ May to August is the best time to avoid the crowds.</p>
     <div class="container text-center">
     <div class="row justify-content-md-center">
     	<div class="col col-lg-9">
-      <h2>Events</h2>
+      <h2><a href="event.php">Events</a></h2>
    	</div>
     </div>
       
