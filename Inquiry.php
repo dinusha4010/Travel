@@ -13,7 +13,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-control form-control-lg" name="first_name" required>
+                    <input type="text" id="first_name" class="form-control form-control-lg" name="first_name" id="first_name" required>
                     <label class="form-label" for="fullname"><p>First Name</p></label>
                   </div>
 
@@ -21,20 +21,24 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-control form-control-lg" name="last_name" required>
+                    <input type="text" id="last_name" class="form-control form-control-lg" name="last_name" required>
                     <label class="form-label" for="checkIn"><p>Last Name</p></label>
                   </div>
 
                 </div>
               </div>
 
-              
+              <div class="row">
+
+              <br><p><span id="fnameError"></span></p>
+                <br><p><span id="lnameError"></span></p>
+              </div>  
 
               <div class="row">
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="email" id="emailAddress" class="form-control form-control-lg" name="email" required>
+                    <input type="email" id="email" class="form-control form-control-lg" name="email" required>
                     <label class="form-label" for="emailAddress"><p>Email</p></label>
                   </div>
 
@@ -42,11 +46,15 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone" required>
+                    <input type="number" id="phone" class="form-control form-control-lg" name="phone" required>
                     <label class="form-label" for="phoneNumber"><p>Phone Number</p></label>
                   </div>
 
                 </div>
+              </div>
+              <div class="row">
+              <br><p><span id="phoneError"></span></p>
+                <br><p><span id="emailError"></span></p>
               </div>
 
               <div class="row">
@@ -54,22 +62,132 @@
 
                   <div class="form-outline">
                   <label class="form-label" for="fullname"><p>Inquiry</p></label>
-                  <textarea class="form-control" placeholder="Write your inquiry here" name ="inquiry" id="floatingTextarea" style="height: 200px" required  ></textarea>
+                  <textarea class="form-control" placeholder="Write your inquiry here" name ="inquiry" id="inquiry" style="height: 200px" required  ></textarea>
                   
                   </div>
-                  
+                  <br><p><span id="inquiryError"></span></p>
                 <button class="btn btn-primary" type="submit" name="submit">Submit</button>
-  
+            
                 </div> 
                 </div>
                 </div>
                 </form>
+               
+                <br><p><span id="inquiryError"></span></p>
 
 
                 
+<script>
+    // function to validate name
+    function validatefName()
+{
+    const first_name=document.getElementById("first_name").value;
+    const fnameError=document.getElementById("fnameError");
+
+    if(first_name.length <4 || first_name.length>50)
+    {
+      fnameError.innerHTML="first Name must be between 4 & 50 characters";
+        return false;
+
+    }
+    else{
+
+      fnameError.innerHTML="";
+        return true;
+    }
+
+}
+
+function validatelName()
+{
+    const last_name=document.getElementById("last_name").value;
+    const lnameError=document.getElementById("lnameError");
+
+    if(last_name.length <4 || last_name.length>50)
+    {
+      lnameError.innerHTML="last Name must be between 4 & 50 characters";
+        return false;
+
+    }
+    else{
+
+      lnameError.innerHTML="";
+        return true;
+    }
+
+}
+// function to validate email
+function validateEmail()
+{
+    const email=document.getElementById("email").value;
+    const emailError=document.getElementById("emailError");   
+    
+    if (email===" " || !email.includes("@"))
+    {
+        emailError.innerHTML="please enter a valid email address";
+        return false;
+
+    }
+    else{
+
+emailError.innerHTML="";
+return true;
+}
+}
+
+// function to validate password
+function validatePhone()
+{
+
+    const phone=document.getElementById("phone").value;
+    const phoneError=document.getElementById("phoneError");
+
+    if(phone.length!=10)
+    {
+      phoneError.innerHTML="Phone number should be 10 digit";
+        return false;
+
+    }
+    else{
+
+      phoneError.innerHTML="";
+        return true;
+    }
+
+}
+
+
+function validateinquiry()
+{
+    const inquiry=document.getElementById("inquiry").value;
+    const inquiryError=document.getElementById("inquiryError");
+
+    if(inquiry.length <10 || inquiry.length>500)
+    {
+      inquiryError.innerHTML="description must be between 10 & 500 characters";
+        return false;
+
+    }
+    else{
+
+      inquiryError.innerHTML="";
+        return true;
+    }
+
+}
+// event listeners for real time validation'
+document.getElementById("first_name").addEventListener("input",validatefName);
+document.getElementById("last_name").addEventListener("input",validatelName);
+document.getElementById("email").addEventListener("input",validateEmail);
+document.getElementById("phone").addEventListener("input",validatePhone);
+document.getElementById("inquiry").addEventListener("input",validateinquiry);
+</script>
+
 
 
 <?php
+
+
 // Check if the 'submit' button in the form was clicked
 if (isset($_POST['submit'])) {
     // Retrieve data from the form and store it in variables
@@ -99,7 +217,7 @@ if (isset($_POST['submit'])) {
     $conn->close();
 }else{
 
-    echo "error";
+    
 }
 ?>
    
