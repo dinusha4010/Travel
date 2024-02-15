@@ -1,5 +1,5 @@
 <?php
-$servername = "php24-db-1"; // Replace with your MySQL server hostname
+$servername = "web-dev-env-main-db-1"; // Replace with your MySQL server hostname
 
 $username = "root";     // Replace with your MySQL username
 $password = "password";     // Replace with your MySQL password

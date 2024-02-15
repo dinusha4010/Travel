@@ -11,12 +11,14 @@
   <label for="floatingTextarea">Package Description</label>
 </div>
 <div class="form-floating mb-3">
-  <input type="number" class="form-control" id="floatingInput" name="price" required>
+  <input type="number" class="form-control" id="price" name="price" required>
   <label for="floatingInput">Price (EUR)</label>
+  <br><p><span id="priceError"></span></p>
 </div>
 <div class="form-floating mb-3">
-  <input type="number" class="form-control" id="floatingInput" name="duration" required>
+  <input type="number" class="form-control" id="duration" name="duration" required>
   <label for="floatingInput">Duration ( 7,14,21,28) in days</label>
+  <br><p><span id="durationError"></span></p>
 </div>
 <div class="form-floating mb-3">
   <input type="file" class="form-control" id="floatingInput" name="fileToUpload" required>
@@ -65,4 +67,50 @@ if (isset($_POST['submit'])) {
     
 }
 ?>
+<script>
+    // function to validate name
+    function checkPrice()
+{
+    const price=document.getElementById("price").value;
+    const priceError=document.getElementById("priceError");
+
+    if(price < 800 || price >5000)
+    {
+      priceError.innerHTML="price must  be between 800 & 5000 EUR";
+        return false;
+
+    }
+    else{
+
+      priceError.innerHTML="";
+        return true;
+    }
+
+}
+
+document.getElementById("price").addEventListener("input",checkPrice);
+
+function checkDuration()
+{
+    const duration=document.getElementById("duration").value;
+    const durationError=document.getElementById("durationError");
+
+    if(duration>0 && duration %7===0 && duration <=28)
+    {
+      durationError.innerHTML="";
+        return true;
+     
+
+    }
+    else{
+
+        durationError.innerHTML="date must  be  7,14,21 or 28 ";
+        return false;
+    }
+
+}
+
+document.getElementById("duration").addEventListener("input",checkDuration);
+</script>
+
 <?php include 'footer.php';?>
