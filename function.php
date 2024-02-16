@@ -32,7 +32,7 @@ function traverlPackage($result)
           <div class="card-body">
             <h3 class="card-title">' . $row['package_name'] . '</h3>
             <p class="card-text">' . $row['description'] ."<br><br>Duration : ". $row['duration']." Days <br><br>Price : EUR". $row['price'].'</p>
-            <a href="#" class="btn btn-primary">Book</a>
+            <a href="feature2.php" class="btn btn-primary">Book</a>
           </div>
         </div>
       </div>';

@@ -3,7 +3,7 @@ $servername = "web-dev-env-main-db-1"; // Replace with your MySQL server hostnam
 
 $username = "root";     // Replace with your MySQL username
 $password = "password";     // Replace with your MySQL password
-$dbname = "accommodation_travel";       // Replace with the name of your MySQL database
+$dbname = "travel";       // Replace with the name of your MySQL database
 
 // Create a database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
