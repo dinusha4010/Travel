@@ -1,14 +1,3 @@
-# Exercise 5: Readme.md
-
-***Welcome to the task README!***
-
-- You are required to create ´Readme.md´ in your project directory to document your activities throughout the project's lifecycle. 
-- You will regularly update it to monitor the ongoing development of the project. 
-
-- You will start by outlining the planned features, task assignments to team members and document the evolving progress of your work. 
-
-- Below, you will find an example to help you get started. Feel free to customize it to match your specific requirements and needs.
-
 # Travel Sri Lanka - Team 12
 
 -Travel SriLanka "Travel Sri Lanka" project! This project aims to provide information about Srilankan nature ,diverse culture,stunning,landscapes and warm hospitality with national events .
