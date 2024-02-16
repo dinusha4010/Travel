@@ -52,6 +52,15 @@ http://shell.hamk.fi/~nuwani23000/Travel/process5.php
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
+- [Create accommodation packages (shell)](http://shell.hamk.fi/~supun23000/Travel/accommaintenance.php)
+- [Create accommodation packages (github)](https://github.com/dinusha4010/Travel/blob/main/accommaintenance.php)
+- [Selection of accommodation packages (shell)](http://shell.hamk.fi/~supun23000/Travel/accommodation.php)
+- [Selection of accommodation packages (github)](https://github.com/dinusha4010/Travel/blob/main/accommodation.php)
+- [Customization of accommodation packages (shell)](http://shell.hamk.fi/~supun23000/Travel/accommodationhotels.php)
+- [Customization of accommodation packages (github)](https://github.com/dinusha4010/Travel/blob/main/accommodationhotels.php)
+- [Displaying reserved Customer details (shell)](http://shell.hamk.fi/~supun23000/Travel/accommodationread.php)
+- [Displaying reserved Customer details (github)](https://github.com/dinusha4010/Travel/blob/main/accommodationread.php)
+
 ### Feature 4
 
 Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
@@ -99,7 +108,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1 :(Kaluarachchi KCD): Package create: [link (github)](https://github.com/dinusha4010/Travel/blob/main/create_package.php) | [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/create_package.php) | Validations Applied
 - Form 2: (Kaluarachchi KCD): Customer inquiry :[link (github)](https://github.com/dinusha4010/Travel/blob/main/Inquiry.php) | Link to the form [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/Inquiry.php).  | Validations Applied
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 3: (Weerasinghe KDSW): Accommodation Maintenance: [link (github)](https://github.com/dinusha4010/Travel/blob/main/accommaintenance.php) | Link to the form [link (shell)](http://shell.hamk.fi/~supun23000/Travel/accommaintenance.php).  | Validations Applied
 
 
 ---
@@ -109,7 +118,7 @@ List and describe any forms that have been created as part of your project. Incl
 List any tables that you have created in the project work
 
 - Table 1 (Kaluarachchi KCD): Traveler package update and remove | [link (github)](https://github.com/dinusha4010/Travel/blob/main/staff_view.php) | [link (shell)](http://shell.hamk.fi/~kaluarachchige23000/webpro/Travel/staff_view.php).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 2 (Weerasinghe KDSW): Customer details-Accommodation | [link (github)](https://github.com/dinusha4010/Travel/blob/main/accommodationread.php) | [link (shell)](http://shell.hamk.fi/~supun23000/Travel/accommodationread.php).
 - Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 
 ---
