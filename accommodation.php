@@ -16,16 +16,16 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
     
 
-        echo '<div class="col-md-3">
-        <div class="card">
-          <img src="' . $row['images'] . '" class="card-img-top" alt="Placeholder Image">
-          <div class="card-body">
-            <h3 class="card-title">' . $row['name'] . '</h3>
-            <p class="card-text">'."<br><br>Rating : ". $row['rating'] ."<br><br>Location : ". $row['location'] ."<br><br>Price per Night (eur) : ". $row['price_per_night']."<br><br>Available Rooms : ". $row['availble_rooms'].' </p>
-            <a href="accommodationhotels.php" class="btn btn-primary">Go</a>
-          </div>
+      echo '<div class="col-md-3">
+      <div class="card">
+        <img src="' . $row['images'] . '" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h3 class="card-title">' . $row['name'] . '</h3>
+          <p class="card-text">'."<br><br>Rating : ". $row['rating'] ."<br><br>Location : ". $row['location'] ."<br><br>Price per Night (EUR) : ". $row['price_per_night']."<br><br>Available Rooms : ". $row['availble_rooms'].' </p>
+          <a href="accommodationhotels.php" class="btn btn-primary">Go</a>
         </div>
-      </div>';
+      </div>
+    </div>';
     }
 
     

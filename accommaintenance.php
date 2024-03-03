@@ -12,14 +12,16 @@
 <div class="row mb-4">
     <label for="name" class="col-sm-4 col-form-label"><h4>Name:</h4></label>
     <div class="col-sm-3">
-      <input type="text" class="form-label" name="name" placeholder="Name" required>
+      <input type="text" class="form-label" name="name" id="name" placeholder="Name" maxlength="50" required>
+      <br><p><span id="nameError"></span></p>
     </div>
 </div>
 
 <div class="row mb-4">
     <label for="Rating" class="col-sm-4 col-form-label"  ><h4>Rating :</h4></label>
     <div class="col-sm-2">
-    <input type="decimal" class="form-label" name="Rating" placeholder="Rating" required>
+    <input type="number" class="form-label" name="Rating" id="rating" placeholder="Rating" step="0.01" required>
+    <br><p><span id="ratingError"></span></p>
     </div>
 </div>
 
@@ -46,27 +48,6 @@
 </div>
 
 <div class="row mb-4">
-    <label for="Check in date" class="col-sm-4 col-form-label"  ><h4>Check in date :</h4></label>
-    <div class="col-sm-2">
-    <input type="date" class="form-label" name="Check in date" placeholder="Check_in_date" required>
-    </div>
-</div>
-
-<div class="row mb-4">
-    <label for="Check out date" class="col-sm-4 col-form-label"  ><h4>Check out date :</h4></label>
-    <div class="col-sm-2">
-    <input type="date" class="form-label" name="Check out date" placeholder="Check_out_date" required>
-    </div>
-</div>
-
-<div class="row mb-4">
-    <label for="Number of guests" class="col-sm-4 col-form-label"  ><h4>Number of guests :</h4></label>
-    <div class="col-sm-2">
-    <input type="number" class="form-label" name="Number of guests" placeholder="Number_of_guests" required>
-    </div>
-</div>
-
-<div class="row mb-4">
     <label for="Images" class="col-sm-4 col-form-label"  ><h4>Images :</h4></label>
     <div class="col-sm-2">
     
@@ -81,6 +62,57 @@
 
 </form>
 
+<script>
+    // function to validate name
+    function validateName()
+{
+    const name=document.getElementById("name").value;
+    const nameError=document.getElementById("nameError");
+
+    if(name.length <4 || name.length>50)
+   
+    {
+        nameError.innerHTML="Hotel Name must be between 4 & 50 characters";
+        return false;
+
+    }
+    else{
+
+        nameError.innerHTML="";
+        return true;
+    }
+
+}
+
+
+document.getElementById("name").addEventListener("input",validateName);
+
+function validateRating()
+{
+    const rating=document.getElementById("rating").value;
+    const ratingError=document.getElementById("ratingError");
+
+    if (rating <0 || rating>5)
+    {
+        ratingError.innerHTML="Rating must be between 0 & 5 ";
+        return false;
+
+    }
+    else{
+
+        ratingError.innerHTML="";
+        return true;
+    }
+
+}
+
+
+document.getElementById("rating").addEventListener("input",validateRating);
+
+</script>
+
+
+
 <?php
 // Check if the 'submit' button in the form was clicked
 if (isset($_POST['submit'])) {
@@ -88,10 +120,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];     
     $Location = $_POST['Location'];   
     $Price_per_night = $_POST['Price_per_night'];       
-    $Available_rooms = $_POST['Available_rooms']; 
-    $Check_in_date = $_POST['Check_in_date']; 
-    $Check_out_date = $_POST['Check_out_date'];
-    $Number_of_guests = $_POST['Number_of_guests'];
+    $Available_rooms = $_POST['Available_rooms'];
     $Rating = $_POST['Rating'];
 
     include 'function.php';
@@ -102,8 +131,8 @@ if (isset($_POST['submit'])) {
     include 'db.php';
 
     // Define an SQL query to insert data into the 'studentsinfo' table
-    $sql = "INSERT INTO accommodation (name, location, price_per_night, availble_rooms, check_in_date, check_out_date, number_of_guests, rating, images)
-            VALUES ('$name', '$Location', '$Price_per_night', '$Available_rooms','$Check_in_date','$Check_out_date','$Number_of_guests', '$Rating','$Images' )";
+    $sql = "INSERT INTO accommodation (name, location, price_per_night, availble_rooms, rating, images)
+            VALUES ('$name', '$Location', '$Price_per_night', '$Available_rooms', '$Rating','$Images' )";
 
     // Execute the SQL query using the database connection
     if ($conn->query($sql) === TRUE) {
@@ -113,6 +142,7 @@ if (isset($_POST['submit'])) {
         // If there was an error in the query, display an error message
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
 
     // Close the database connection
     $conn->close();
